@@ -202,9 +202,9 @@ var spend_tracker_app = {
                     // results_div += "<div class='sub_text vessel_name'> <span class='details_title'>Vendor: </span><b>" + toTitleCase(results[i]['vendor_name']) + "</b></div>";
                     console.log(results[i]['Vessel_name']);
                     if(results[i]['Vessel_name'])
-                        results_div += "<div class='sub_text vessel_name'> <span class='details_title'>Vessel: </span><b>" + toTitleCase(results[i]['Vessel_name']) + "</b>"+"<span class='my-count'>USD "+parseFloat(results[i]['TOTAL_GROUP_CURRENCY']).formatMoney(2, '.', ',')+"</span></div>";
+                        results_div += "<div class='sub_text vessel_name'> <span class='details_title'>Vessel: </span><b>" + toTitleCase(results[i]['Vessel_name']) + "</b></span></div>";
                     
-                    results_div += "<div class='sub_text invoice_no'> <span class='details_title'>Invoice No: </span><b>" + toTitleCase(results[i]['VENDOR_INVOICE_NO']) + "</b></div></span>";
+                    results_div += "<div class='sub_text invoice_no'> <span class='details_title'>Invoice No: </span><b>" + toTitleCase(results[i]['VENDOR_INVOICE_NO']) + "</b>"+"<span class='my-count'>USD "+parseFloat(results[i]['TOTAL_GROUP_CURRENCY']).formatMoney(2, '.', ',')+"</div></span>";
                     results_div += "<div class='sub_text invoice_register_date'> <span class='details_title'>Registration Date: </span><b>" + results[i]['REGISTRATION_DATE'].split('T',1)[0] + "</b></div></span>";
                     results_div += "<div class='sub_text invoice_paid_date'> <span class='details_title'>Pay Due Date: </span><b>" + results[i]['PAY_DUE_DATE'].split('T',1)[0] + "</b></div></span>";
                     // results_div += "<span class='chevron'></span>";
