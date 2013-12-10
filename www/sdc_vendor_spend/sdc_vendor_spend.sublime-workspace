@@ -1,0 +1,986 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"ved",
+				"vendor_name"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"ve",
+				"vendor_name"
+			],
+			[
+				"favor",
+				"favoriteShips"
+			],
+			[
+				"log",
+				"login_success"
+			],
+			[
+				"sdc",
+				"sdc_settings"
+			],
+			[
+				"favo",
+				"favoriteShips"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"ships_a",
+				"ship_imo_mmsi_callsign"
+			],
+			[
+				"sdc_s",
+				"sdc_settings_auto"
+			],
+			[
+				"asset",
+				"asset-parameter-CSO1"
+			],
+			[
+				"off",
+				"officers"
+			],
+			[
+				"para",
+				"parameter-name"
+			],
+			[
+				"bs",
+				"bs-shipmanagement"
+			],
+			[
+				"to",
+				"toFixed  (function)"
+			],
+			[
+				"att",
+				"attributes"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"find",
+				"find_tag_value"
+			],
+			[
+				"qu",
+				"query_str"
+			],
+			[
+				"q",
+				"query_str"
+			],
+			[
+				"par",
+				"parse_attachment"
+			],
+			[
+				"at",
+				"atype"
+			],
+			[
+				"cur",
+				"cur_time"
+			],
+			[
+				"timeout2",
+				"timeout2_shown"
+			],
+			[
+				"p",
+				"push  (function)"
+			],
+			[
+				"sts",
+				"sts_fnd"
+			],
+			[
+				"ajax",
+				"ajax_error"
+			],
+			[
+				"first",
+				"first_time"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"get",
+				"getURLParameter"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"login",
+				"login_email"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fav",
+				"favorites"
+			],
+			[
+				"sea",
+				"search_box"
+			],
+			[
+				"demo_",
+				"demo_ipad"
+			],
+			[
+				"iframe",
+				"iframe_demo"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"engin",
+				"engine_rpm  (variable)"
+			],
+			[
+				"grt",
+				"bsm_grt"
+			],
+			[
+				"sq",
+				"sql_q"
+			],
+			[
+				"upda",
+				"update_start"
+			],
+			[
+				"bsm",
+				"bsm_imo"
+			],
+			[
+				"sd",
+				"sdc_settings2"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"v",
+				"vessel_sdc_index  (variable)"
+			],
+			[
+				"ves",
+				"vesel_sdc"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"fa",
+				"favorites"
+			],
+			[
+				"padd",
+				"padding:   (property)"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"sear",
+				"search"
+			],
+			[
+				"search",
+				"search_box"
+			],
+			[
+				"run",
+				"run_fetch_master"
+			],
+			[
+				"firs",
+				"first_get_data"
+			],
+			[
+				"run_",
+				"run_fetch_master2"
+			],
+			[
+				"curl_inf",
+				"curl_getinfo"
+			],
+			[
+				"curl",
+				"curl_arr2"
+			],
+			[
+				"mas",
+				"master"
+			],
+			[
+				"resul",
+				"results"
+			],
+			[
+				"mast",
+				"master2"
+			],
+			[
+				"j",
+				"j"
+			],
+			[
+				"c",
+				"curl_arr  (variable)"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"FLEE",
+				"PREFIX_FLEETMON"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"sou",
+				"source"
+			],
+			[
+				"ch",
+				"ch_url  (variable)"
+			],
+			[
+				"ch_",
+				"ch_url"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"url",
+				"urldecode"
+			],
+			[
+				"PREF",
+				"PREFIX_FLEETMON"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"vess",
+				"vessel_name"
+			],
+			[
+				"searc",
+				"search_form"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin:   (property)"
+			],
+			[
+				"bag",
+				"background-color"
+			],
+			[
+				"row",
+				"row_index"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"resp",
+				"responses"
+			],
+			[
+				"ret",
+				"ret  (variable)"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"xml",
+				"xml_in  (variable)"
+			],
+			[
+				"arr",
+				"array_flip"
+			],
+			[
+				"colum",
+				"column_index  (variable)"
+			],
+			[
+				"lat",
+				"latlon"
+			],
+			[
+				"lon",
+				"lonlat"
+			],
+			[
+				"backg",
+				"background-color:   (property)"
+			],
+			[
+				"reu",
+				"result2_html"
+			],
+			[
+				"result",
+				"result2_html"
+			],
+			[
+				"cell",
+				"cellcontent"
+			],
+			[
+				"vessel",
+				"vessel_search"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"bubble",
+				"bubble-content"
+			],
+			[
+				"bub",
+				"bubble-content"
+			],
+			[
+				"padding",
+				"padding-right:   (property)"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"nav",
+				"navbar_top"
+			],
+			[
+				"cover",
+				"cover_photo"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"background-re",
+				"background-repeat:   (property)"
+			],
+			[
+				"prof",
+				"profile_details"
+			],
+			[
+				"PADDING",
+				"padding-left"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"ff",
+				"font-face  (rule)"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"profile",
+				"profile_sub_text"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"pro",
+				"profile_cute_badge"
+			],
+			[
+				"pr",
+				"profile_cuteness"
+			],
+			[
+				"follow_",
+				"follow_block"
+			],
+			[
+				"r",
+				"rgb"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"win",
+				"windowHeight"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"fol",
+				"follow_block"
+			],
+			[
+				"webkit-mas",
+				"-webkit-mask-image:   (property)"
+			],
+			[
+				"your",
+				"your_position"
+			],
+			[
+				"te",
+				"tempSize"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 243.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/www/css/index.css",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/www/js/index.js",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/get_vendor_invoices.php",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/www/index.html",
+		"/Users/s4sagar/Dropbox/vessel_tracker/vessel_tracker_cordova_v3/www/js/list_of_ports.txt",
+		"/Users/s4sagar/Dropbox/vessel_tracker/get_vessel_position_history.php",
+		"/Users/s4sagar/Desktop/BSM/List of seaports - Wikipedia, the free encyclopedia.html",
+		"/Users/s4sagar/Dropbox/vessel_tracker_cordova_v3/www/config.xml",
+		"/Users/s4sagar/test_project/test/www/index.html",
+		"/Users/s4sagar/Dropbox/vessel_tracker/ldap_test.php",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/js/ratchet.js",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker/Classes/MainViewController.m",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker/Classes/MainViewController.h",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker/Classes/AppDelegate.h",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/index.html",
+		"/Users/s4sagar/Dropbox/vessel_tracker/read_email.py",
+		"/Users/s4sagar/Downloads/old-trail-mail.xml",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker/Classes/AppDelegate.m",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/main.html",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/js/index.js",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/get_sdc_vendor_spend.php",
+		"/Users/s4sagar/Dropbox/vessel_tracker/index.html",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/js/jqm.autoComplete-1.5.2.js",
+		"/Users/s4sagar/Dropbox/vessel_tracker/mini/index-php.html",
+		"/Users/s4sagar/Desktop/BSM/bsmcy_vendor_spend.txt",
+		"/Users/s4sagar/Desktop/BSM/bsmcn_vendor_spend.txt",
+		"/Users/s4sagar/Desktop/BSM/bsmgr_vendor_spend.txt",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker.xcodeproj/xcuserdata/s4sagar.xcuserdatad/xcschemes/BSM",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/Vendor",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/Spend",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker.xcodeproj/xcuserdata/s4sagar.xcuserdatad/xcschemes/BSM Vendor Spend Tracker.xcscheme",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/Tracker.xcscheme",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker/SpendTracker-Info.plist",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/SpendTracker/config.xml",
+		"/Users/s4sagar/Dropbox/vessel_tracker/sdc_vendor_spend/platforms/ios/www/config.xml",
+		"/Users/s4sagar/Downloads/ratchet/ratchet.css",
+		"/Users/s4sagar/Dropbox/vessel_tracker/platforms/ios/VesselTracker/Images.xcassets/LaunchImage.launchimage/Contents.json",
+		"/Users/s4sagar/Dropbox/vessel_tracker/platforms/ios/VesselTracker/Images.xcassets/LaunchImage-1.launchimage/Contents.json",
+		"/Users/s4sagar/Dropbox/vessel_tracker/platforms/ios/VesselTracker/Images.xcassets/AppIcon.appiconset/Contents.json",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/css/ratchet_old.css",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/css/ratchet.css",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/config.xml",
+		"/Users/s4sagar/test_project/test/www/css/ratchet.css",
+		"/Users/s4sagar/Dropbox/vessel_tracker/platforms/ios/VesselTracker/config.xml",
+		"/Users/s4sagar/Downloads/cordova-3.1.0/README.md",
+		"/Users/s4sagar/Dropbox/vessel_tracker/purple_finder_columns.sql",
+		"/Users/s4sagar/Downloads/position-report-mail.xml",
+		"/Users/s4sagar/Downloads/old-trail-mail (1).xml",
+		"/Users/s4sagar/Downloads/old-trail-mail (2).xml",
+		"/Users/s4sagar/Downloads/vessel_details_purplefinder.sql",
+		"/Users/s4sagar/Dropbox/vessel_tracker/read_email.error",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www 2/config.xml",
+		"/Users/s4sagar/Downloads/allocation_of_vessels.sql",
+		"/Users/s4sagar/Dropbox/vessel_tracker/purple_finder_columns",
+		"/Users/s4sagar/Dropbox/vessel_tracker/vessel_tracker.php",
+		"/Users/s4sagar/Downloads/parse_email_report.py",
+		"/Applications/Microsoft Lync.app/Contents/Info.plist",
+		"/Applications/Skype.app/Contents/Info.plist",
+		"/Users/s4sagar/Downloads/read_email.py",
+		"/Users/s4sagar/Dropbox/vessel_tracker/VesselTracker_files/index.css",
+		"/Users/s4sagar/Dropbox/vessel_tracker/platforms/android/AndroidManifest.xml",
+		"/Users/s4sagar/Dropbox/vessel_tracker/www/css/index.css",
+		"/Users/s4sagar/Desktop/BSM/session_timeout_warning.js",
+		"/Users/s4sagar/Desktop/Janani Job Hunt/crawler/angelist_parser.js",
+		"/Users/s4sagar/Desktop/Janani Job Hunt/crawler/send_emails.py",
+		"/Users/s4sagar/Desktop/BSM/session_timeout_demo.html",
+		"/Users/s4sagar/Desktop/BSM/cookie.txt",
+		"/Users/s4sagar/vessel_tracker_dev/www/index.html",
+		"/Users/s4sagar/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/s4sagar/Dropbox/vessel_tracker/b.html",
+		"/Users/s4sagar/vessel-finder/VesselTracker.html",
+		"/Users/s4sagar/vessel-finder/www/config.xml",
+		"/Applications/MAMP/htdocs/insert.php",
+		"/Users/s4sagar/Documents/update_db.sh",
+		"/Applications/MAMP/htdocs/update_phones.php",
+		"/Users/s4sagar/Dropbox/Public/vessel_tracker.sql",
+		"/Users/s4sagar/vessel-finder/www/js/ratchet.js",
+		"/Users/s4sagar/vessel-finder/www/index2.html",
+		"/Users/s4sagar/vessel-finder/www/css/index.css",
+		"/Users/s4sagar/vessel-finder/www/index.html",
+		"/Users/s4sagar/Downloads/HTML/css/style.css",
+		"/Applications/MAMP/htdocs/test.php",
+		"/Users/s4sagar/vessel-finder/www/js/index.js",
+		"/Users/s4sagar/Desktop/try fleetmon",
+		"/Applications/MAMP/htdocs/test2.php",
+		"/Users/s4sagar/Desktop/vessel_det.txt",
+		"/Applications/MAMP/htdocs/vessel_finder.php",
+		"/Users/s4sagar/Dropbox/Public/vessel_finder.php",
+		"/Users/s4sagar/to_del",
+		"/Users/s4sagar/Dropbox/Public/wget-log-27-07",
+		"/Users/s4sagar/Dropbox/HelloWorld/www/css/index.css",
+		"/Users/s4sagar/Dropbox/HelloWorld/www/index.html",
+		"/Users/s4sagar/Dropbox/HelloWorld/www/js/index.js",
+		"/Users/s4sagar/Downloads/phonegap-2.9.0/lib/cordova-cli/README.md",
+		"/Users/s4sagar/Downloads/phonegap-2.9.0/README.md",
+		"/Users/s4sagar/Dropbox/HD Bakup/Codes/code/Stanford Algorithms I/karatsuba.cpp",
+		"/Users/s4sagar/HelloWorld/www/index2.html",
+		"/Users/s4sagar/my-buddy-land/static/css/base.css",
+		"/Users/s4sagar/my-buddy-land/static/css/base_mobile.css",
+		"/Users/s4sagar/my-buddy-land/templates/jinja/macros.html",
+		"/Users/s4sagar/my-buddy-land/templates/cassie.html",
+		"/Users/s4sagar/my-buddy-land/static/js/base.js",
+		"/Users/s4sagar/my-buddy-land/application/views.py",
+		"/Users/s4sagar/my-buddy-land/templates/emails/sign_up_email.html",
+		"/Users/s4sagar/my-buddy-land/templates/base.html",
+		"/Users/s4sagar/my-buddy-land/templates/wait_list.html",
+		"/Users/s4sagar/my-buddy-land/templates/presentation.html",
+		"/Users/s4sagar/my-buddy-land/templates/rosie.html",
+		"/Users/s4sagar/vidya-test2/app.yaml",
+		"/Users/s4sagar/vidya-test2/application/__init__.py",
+		"/Users/s4sagar/my-buddy-land/templates/profile.html",
+		"/Users/s4sagar/my-buddy-land/project.sublime-project",
+		"/Users/s4sagar/zengrocery/application/models.py",
+		"/Users/s4sagar/zengrocery/application/views.py",
+		"/Users/s4sagar/zengrocery/templates/sample_delivery.html",
+		"/Users/s4sagar/zengrocery/templates/base.html",
+		"/Users/s4sagar/zengrocery/templates/packages.html",
+		"/Users/s4sagar/zengrocery/static/css/base.css",
+		"/Users/s4sagar/zengrocery/templates/list.html",
+		"/Users/s4sagar/zengrocery/project.sublime-project",
+		"/Users/s4sagar/zengrocery/templates/jinja/list_items.html",
+		"/Users/s4sagar/zengrocery/templates/login.html",
+		"/Users/s4sagar/Desktop/safeway_items 2.html",
+		"/Users/s4sagar/zengrocery/templates/home.html",
+		"/Users/s4sagar/json_for_now.sh",
+		"/Users/s4sagar/Dropbox/PALVALabs/email_crawler/safeway_parse.sh",
+		"/Users/s4sagar/Desktop/safeway_items.html",
+		"/Users/s4sagar/safeway_parse.sh"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open file>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			".*.\\[edit\\]\\n",
+			".*.\\[edit\\]",
+			"\\[edit]'",
+			"http://en.wikipedia.org/wiki/List_of_seaports#",
+			"Abidjan",
+			"abidjan",
+			"<body>",
+			"body",
+			"$(\".spinner\").css('margin','auto');\n                    ",
+			"#index",
+			"$(\".spinner\").css('display','block');",
+			"$(\".spinner\").css('display','inline');",
+			"// $('.spinner').hide();",
+			"// $('.spinner_index').hide();",
+			"$('.spinner_index').hide();",
+			"$('.spinner').hide();",
+			"$(\".spinner\").css('margin','auto');\n            ",
+			"$('.spinner').hide();",
+			".spinner",
+			"$(\".spinner\").css('display','block');",
+			"$(\".spinner\").css('display','inline');",
+			"$('.spinner').hide();",
+			"$(\".spinner\").center();",
+			"spinner",
+			"encodeURIComponent",
+			"center() =",
+			"centre",
+			"for",
+			"error",
+			"login",
+			"ajax",
+			"AJAX",
+			"spinner",
+			"BSM Vendor Spend Tracker",
+			"BSM",
+			"location.re",
+			"show_bookmarks_stars",
+			"$('.welcome').show();",
+			"show_bookmarks_stars",
+			"init",
+			"clear",
+			"submit",
+			"ships_auto_complete",
+			"fetch_res",
+			"submit",
+			"welcome",
+			"bar-title",
+			"transition-duration: .2s, .2s;",
+			"Given extra right padding",
+			"fixed",
+			"$(\".spinner\").center();",
+			".center",
+			"button",
+			"button.button-block",
+			"overflow",
+			"bar-title",
+			"title",
+			"submit",
+			"transit",
+			"hover",
+			"loave",
+			"blur",
+			"transition",
+			"oneerr",
+			"window.on",
+			"submit",
+			"alert(",
+			"favorites",
+			"console",
+			"===",
+			"!==",
+			": ",
+			"===",
+			"!==",
+			");\n",
+			"=== 'f",
+			"device",
+			"OFF",
+			"query =",
+			"query",
+			"save_sdc",
+			"autocompl",
+			"localstorage",
+			"save_",
+			"heading",
+			"Heading",
+			"call-s",
+			"proximity",
+			"proximity-d",
+			"print",
+			"lat",
+			"asset-name",
+			"http",
+			"http://",
+			"translate3d(",
+			"translate3d(48",
+			"translate3d(",
+			"translate3d(47",
+			"toggle",
+			"chevron",
+			"https://get",
+			"OFF",
+			"data",
+			"map_db_name",
+			"latitude",
+			",\n	",
+			" varchar(100)",
+			"varchar(100)",
+			"`",
+			" varchar(100),",
+			"\n",
+			"varchar",
+			"\n",
+			"proximi",
+			"vessel",
+			"trace-application",
+			"ldap.OPT",
+			"l.set",
+			",",
+			"NSUI",
+			"\n",
+			",\n",
+			"offset",
+			"true",
+			" \\d*",
+			"false",
+			"true",
+			" \\d.*"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"#index_content",
+			"$(\".spinner_index\").css('display','inline');",
+			"$('.spinner').hide();",
+			"$('.spinner_index').hide();",
+			"// $('.spinner_index').hide();",
+			"// $('.spinner').hide();",
+			"",
+			"// $('.spinner').hide();",
+			"$(\".spinner\").css('display','block');",
+			"// $('.spinner').hide();",
+			"// $(\".spinner\").center();",
+			"SpendTracker",
+			"==",
+			"!=",
+			"] = \n	",
+			"",
+			"'",
+			"",
+			"` varchar(100),\n`",
+			"varchar2",
+			" varchar(100), ",
+			" ",
+			"' varchar(100),\n'",
+			" varchar(100),\n' varchar(100),\n'",
+			" varchar(100),\n",
+			" varchar(100),",
+			"LDAP_OPT",
+			"ldap_set",
+			"','",
+			") (",
+			"",
+			"VesselTracker",
+			",",
+			"','",
+			",0,",
+			",",
+			"longitude",
+			"latitude",
+			",",
+			",0,",
+			",",
+			",0,",
+			",0,0,",
+			",0,",
+			",",
+			"','",
+			"',",
+			"'BSM",
+			",",
+			"',",
+			"'BSM",
+			",",
+			"'",
+			"\"",
+			"favoriteShips",
+			"81.826172",
+			"-33.137551",
+			"103.892212",
+			"1.289755",
+			"<a href=\"/requestsignup\"><img",
+			"",
+			"<a href=\"/requestsignup\"><img",
+			"feed_content_block right",
+			"feed_content_block left",
+			", 'price': '5.99'},",
+			"",
+			", 'price': '5.99'},",
+			"APPROVAL",
+			"Attendee",
+			"session['access_token']",
+			"/static"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"templates/base.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true
+}

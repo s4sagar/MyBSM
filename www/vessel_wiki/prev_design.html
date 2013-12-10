@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/ratchet.css" />
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/ratchet.js"></script>
+    
+    <script type="text/javascript">
+      $(document).on("mobileinit", function(){
+        //apply overrides here
+        $.mobile.allowCrossDomainPages = true;
+        $.support.cors = true;
+      });
+    </script>
+
+    <title>Vessel Tracker</title>
+  </head>
+  
+  <body>
+    <header class="bar-title">
+      <img src='img/bsm_logo.gif' style="height: 30px; padding-top:2px;"/>
+      <h1 class="title" onclick="$('html, .app').animate({ scrollTop: 0 }, 600);">BSM Vessel Tracker</h1>
+      
+      <!-- <a class="button" id='top_home' href="#">
+        My Vessels
+      </a>
+      <a class="button" id='top_search' href="#">
+        Search
+      </a> -->
+      <a class="button" id='top_refresh' href="#">
+        <img src='img/refresh.png' style="height: 19px; margin: -5px; padding: 1px;">
+      </a>
+    </header>
+    <!-- <div class='header'></div> -->
+    <div class="app content">
+      <!-- <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+      </div> -->
+    
+      <div id="search_box">
+        <form id="search_form" class="clearfix">
+          <input type="search" value="Name / IMO / MMSI" id="vessel_name" name="vessel"/>
+          <div class="toggle_text"> BSM Only</div>
+          <a href="#" id="bsm_only">
+            <div class="toggle active" id="bsm_toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </a>
+        </form>
+      </div>
+      <div style="clear:both; margin-bottom: 15px;"> </div>
+      
+      <div class='spinner'>
+        <img src="img/spinner.gif" width="20px" height="20px"/>
+      </div>
+      <div class='favorites'></div>
+      <!-- <ul class="list">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li class="list-divider">List Divider</li>
+        <li>List item 3</li>
+      </ul> -->
+      <!-- <div class='results'></div> -->
+      <ul class='list results'></ul>
+      <div class='error' id='ajax_error'> Sorry, there was a temporary error. Please try again in a minute.<br/>-s4sagar@gmail.com</div>
+
+      <div class='footer'></div>
+
+      <!-- _________________  BOTTOM BAR  __________________-->
+      <nav class="bar-tab" id='my_bottom_bar'>
+        <ul class="tab-inner">
+          <li class="tab-item active" id="home-tab-bar">
+            <a href="#">
+              <img class="tab-icon" src="img/icon-home.png">
+              <div class="tab-label">My Vessels</div>
+            </a>
+          </li>
+          <li class="tab-item" id="search-tab-bar">
+            <a href="#">
+              <img class="tab-icon" src="img/search.png">
+              <div class="tab-label">Search</div>
+            </a>
+          </li>
+          <li class="tab-item" id="settings-tab-bar">
+            <a href="#">
+              <img class="tab-icon" src="img/icon-settings.png">
+              <div class="tab-label">Settings</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      app.initialize();
+      var favoriteShips = new Array();
+      favoriteShips = JSON.parse(localStorage.getItem("favoriteShips"));
+
+      if (favoriteShips == null) {
+        favoriteShips = new Array();
+      } else {
+        fetch_results('',favoriteShips);
+      }
+
+      function add_bookmark(name_mmsi_id) {
+        $('#i_'+name_mmsi_id).attr('src','img/star2.png');
+        $('#'+name_mmsi_id).attr("onClick","remove_bookmark(this.id)");
+        if ( !( name_mmsi_id in favoriteShips ) ) {
+          favoriteShips.push(name_mmsi_id);
+        }
+        localStorage.setItem("favoriteShips", JSON.stringify(favoriteShips));
+      }
+
+      function remove_bookmark(name_mmsi_id) {
+        $('#i_'+name_mmsi_id).attr('src','img/star.png');
+        var index = favoriteShips.indexOf(name_mmsi_id);
+        favoriteShips.splice(index, 1);
+        localStorage.setItem("favoriteShips", JSON.stringify(favoriteShips));
+      }
+
+      function show_bookmarks_stars() {
+        for(var i=0; i<favoriteShips.length; i++) {
+          $('.results #i_'+favoriteShips[i]).attr('src','img/star2.png');
+          $('.favorites #i_'+favoriteShips[i]).attr('src','img/star2.png');
+          $('#'+favoriteShips[i]).attr("onClick","remove_bookmark(this.id)");
+        }
+      }
+
+      $("#search_form").submit(function() {
+        $('input#vessel_name').blur();
+        $("#ajax_error").hide();
+        $(".results").html('');
+        var query = encodeURIComponent($('#vessel_name').val());
+        fetch_results(query);
+        return false;
+      });
+
+      $("#vessel_name").focus(function() {
+        $(this).css('color','rgb(0,0,0)');
+        if (this.value == 'Name / IMO / MMSI') this.value='';
+      });
+
+      $("#vessel_name").blur(function(){
+        if (this.value == '') {
+          this.value = 'Name / IMO / MMSI';
+          $(this).css('color','rgb(146,146,146)');
+        }
+      });
+
+      $("#top_refresh").click(function(){
+        if ($('.tab-item.active').attr('id') == 'home-tab-bar') {
+          $("#search_box").hide();
+          $("#ajax_error").hide();
+          $(".results").hide();
+          $(".favorites").html('');
+          $('.spinner').show();
+          $(".favorites").show();
+
+          fetch_results('',favoriteShips);
+        } else {
+          $(".favorites").hide();
+          $("#ajax_error").hide();
+          $("#search_box").show();
+          $("#vessel_name").val('Name / IMO / MMSI');
+          $("#vessel_name").css('color','rgb(146,146,146)');
+          $(".results").html('');
+          $(".results").show();
+          $('.spinner').css('display', 'none');
+        }
+      });
+
+      $('#bsm_only').click(function (argument) {
+        if ($('#bsm_toggle').hasClass('active')) {
+          $('#bsm_toggle').removeClass('active');
+        } else {
+          $('#bsm_toggle').addClass('active')
+        }
+      });
+
+
+      $('#search-tab-bar').click(function(){
+        $(".favorites").hide();
+        $("#ajax_error").hide();
+        $("#search_box").show();
+
+        $("#vessel_name").val('Name / IMO / MMSI');
+        $("#vessel_name").css('color','rgb(146,146,146)');
+        
+        $(".results").html('');
+        $(".results").show();
+        $('.spinner').css('display', 'none');
+        $('.tab-item.active').removeClass('active');
+        $('#search-tab-bar').addClass('active');
+      });
+
+      $('#home-tab-bar').click(function(){
+        $("#search_box").hide();
+        $("#ajax_error").hide();
+        $(".results").hide();
+        $(".favorites").show();
+
+        if ($(".favorites").html() == '') {
+          fetch_results('',favoriteShips);
+        }
+        $('.tab-item.active').removeClass('active');
+        $('#home-tab-bar').addClass('active');
+      });
+
+    </script>
+
+</body>
+</html>

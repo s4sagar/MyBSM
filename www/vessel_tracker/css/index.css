@@ -1,0 +1,377 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    /*background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;*/
+    background-color: rgb(95,150,214);
+    background-color: rgb(255,255,200);
+    background-color: rgb(0,0,0);
+    background-color: rgb(230,230,230);
+    
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    padding-bottom: 75px;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    height:100%;                   /* text area height */
+    width:100%;                  /* text area width */
+    margin: 0px;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        /*background-position:left center;*/
+        /*padding:75px 0px 75px 170px;*/  /* padding-top + padding-bottom + text area = image height */
+        /*margin:-90px 0px 0px -198px;*/  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    overflow:visible;
+    text-align:center;
+}
+
+#search_box {
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 7px;
+    background-color: rgb(245,245,245);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(37, 37, 37, 0.27);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(37, 37, 37, 0.27);
+    box-shadow: 0px 2px 5px 0px rgba(37, 37, 37, 0.27);
+    /*position: fixed;
+    top: 0px;*/
+}
+
+#vessel_name {
+    width: 99%;
+    float: left;
+    color: rgb(146,146,146);
+    margin: 6px;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.toggle {
+   float: left; 
+}
+
+.toggle_text {
+    float: left;
+    width: 10%;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.results {
+    width: 100%;
+    font-size: 10.4px;
+}
+
+.vessel_wiki {
+    width: 100%;
+    font-size: 12.4px;
+}
+
+.vessel_title_wiki{
+
+}
+
+.vessel_text_wiki{
+    font-weight: bold;
+}
+
+.vessel_name_wiki {
+    text-align:  center;
+}
+
+#tdc_list {
+    
+}
+
+.ship_details {
+    margin: 5px;
+    /*padding-top: 15px;*/
+    padding-bottom: 22.5px;
+    background-color: white;
+    font-size: 13px;
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Helvetica;
+    /*box-shadow: 0px 0px 15px #888888;*/
+    -moz-box-shadow: 0px 1px 2px 1px rgba(37, 37, 37, 0.6);
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(37, 37, 37, 0.6);
+    box-shadow: 0px 1px 2px 1px rgba(37, 37, 37, 0.6);
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.ship_details .sub_text{
+    margin-left: 15px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.sub_text_bold {
+    width: 140px;
+    float: left;
+}
+
+.ship_name{
+    font-size: 19px;
+    font-family: Helvetica;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 7.5px;
+    float: left;
+    width: 91%;
+}
+
+.ship_details .map {
+    margin-top: 2.5px;
+    margin-bottom: 7.5px;
+}
+
+.ship_map_img {
+    -moz-box-shadow: 0px 0px 5px 0px rgba(37, 37, 37, 0.27);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(37, 37, 37, 0.27);
+    box-shadow: 0px 0px 5px 0px rgba(37, 37, 37, 0.27);
+    max-width: 100%;
+/*    -moz-box-shadow: 0px 1px 2px 2px rgba(37, 37, 37, 0.27);
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(37, 37, 37, 0.27);
+    box-shadow: 0px 1px 2px 2px rgba(37, 37, 37, 0.27);*/
+}
+
+.popup_label {
+    font-weight: bold;
+}
+
+.star_popup {
+    float: left;
+}
+
+.popup_title {
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 0px;
+    float: left;
+}
+
+.red {
+    font-weight: bold;
+    color: red; 
+}
+
+.green {
+    color: green;
+}
+
+.star {
+    float: left;
+    padding-top: 5px;
+}
+
+.spinner {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    z-index: 999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+#ajax_error {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(146,146,146);
+    padding: 20px;
+}
+
+.welcome {
+    display: none;
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.welcome_title {
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.welcome_name {
+    font-size: 19px;
+    color: black;
+}
+
+.help_settings {
+    width: 35px;
+}
+
+.help_toggle {
+    width: 55px;
+}
+
+.help_star {
+    width: 20px;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.footer {
+    margin-bottom: 80px;
+}
+
+.app .content {
+    width: 100%; position: absolute; top: 50px; bottom: 50px;
+}
+
+#my_bar_title {
+    left: 28px; /* 22 for Android? */
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+#my_top_bar {
+    background-color: #494949;
+    background-image: -webkit-linear-gradient(top, #494949 0, #000000 100%);
+    background-image: linear-gradient(to bottom, #494949 0, #000000 100%);
+}
+
+.my_top_button {
+    background-image: -webkit-linear-gradient(top, #646464 0, #161616 100%);
+    background-image: linear-gradient(to bottom, #646464 0, #161616 100%);
+    border: 1px solid #141414;
+}
+
+#top_home,#top_search,#top_refresh, #top_settings, #top_worldmap{
+    background-image: -webkit-linear-gradient(top, #646464 0, #161616 100%);
+    background-image: linear-gradient(to bottom, #646464 0, #161616 100%);
+border: 1px solid #141414;
+}
+
+#bsmuk ul, li {
+    list-style: none;
+}
+
+#bsmuk li {
+    line-height:140%;
+    /*text-indent:0px;*/
+    background-position: 1px 8px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+}
+.check{
+    background-color: white
+}
+/* Collapsed state for list element */
+/*#bsmuk .collapsed {
+    background-image: url(../img/collapsed.png);
+}*/
+/* Expanded state for list element
+/* NOTE: This class must be located UNDER the collapsed one */
+/*#bsmuk .expanded {
+    background-image: url(../img/expanded.png);
+}*/
+#bsmuk {
+    clear: both;
+}
+
+#suggestions li {
+    padding: 7px;
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.login {
+    display: none;
+}
+
+.login_title {
+    font-size: 22px;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+    padding: 50px;
+    text-align: center;
+
+}
+
+#login_form {
+    width: 85%;
+    margin: auto;
+}
+
+.ios7 {
+    top: 82px;
+}

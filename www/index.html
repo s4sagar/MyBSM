@@ -1,42 +1,373 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+   <meta charset="utf-8" />
+   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <!-- Mobile viewport optimized: h5bp.com/viewport -->
+   <meta name="viewport" content="width=device-width">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   <title>MyBSM - Mobile Apps</title>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+   <meta name="robots" content="noindex, nofollow">
+   <meta name="description" content="BootMetro : Simple and complete web UI framework to create web apps with Windows 8 Metro user interface." />
+   <meta name="keywords" content="bootmetro, modern ui, modern-ui, metro, metroui, metro-ui, metro ui, windows 8, metro style, bootstrap, framework, web framework, css, html" />
+   <meta name="author" content="AozoraLabs by Marcello Palmitessa"/>
+   <link rel="publisher" href="https://plus.google.com/117689250782136016574">
+
+   <!-- remove or comment this line if you want to use the local fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+
+   <link rel="stylesheet" type="text/css" href="assets/css/bootmetro.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-responsive.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-icons.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/my_overload.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css" />
+   <!-- <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-1.3.1.min.css"> -->
+   <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+   <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-ui-light.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/datepicker.css"> -->
+
+   <!--  these two css are to use only for documentation -->
+   <!-- <link rel="stylesheet" type="text/css" href="assets/css/demo.css"> -->
+
+   <!-- Le fav and touch icons -->
+   <link rel="shortcut icon" href="assets/ico/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  
+   <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+      Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+      For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+   <script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+   <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3182578-6']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+   </script>
+</head>
+
+<body>
+   <!--[if lt IE 7]>
+   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+   <![endif]-->
+
+   <div id="wrap">
+   
+      <!-- Header
+      ================================================== -->
+      <div id="nav-bar" class="">
+         <div class="pull-left">
+            <div id="header-container">
+               <!-- <h5>MyBSM Mobile Apps</h5> -->
+               <div class="dropdown">
+                  <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">
+                     MyBSM Mobile Apps
+                     <b class="caret"></b>
+                  </a>
+                  <!-- <ul class="dropdown-menu">
+                  <li><a href="./metro-layouts.html">Metro Layouts</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./index.html">Home</a></li>
+                  </ul> -->
+               </div>
             </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+         </div>
+         <!-- <div class="pull-right">
+            <div id="top-info" class="pull-right">
+            <a id="settings" href="#" class="win-command pull-right">
+               <span class="win-commandicon win-commandring icon-cog-3"></span>
+            </a>
+            <a id="logged-user" href="#" class="win-command pull-right">
+               <span class="win-commandicon win-commandring icon-user"></span>
+            </a>
+            <div class="pull-left">
+               <h3>Vidya Sagar</h3>
+               <h4>Sankaranarayanan</h4>
+            </div>
+         </div>
+      </div> -->
+   </div>
+      <div style="clear:both" />
+      <div id="login">
+         <form class="form-horizontal" id='login-form'>
+            <!-- <div class="control-group">
+               <div class="login-title">Please login using your Windows .</div>
+            </div> -->
+            <div class="control-group">
+               <label class="control-label" for="inputEmail">Email</label>
+               <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="test@bs-shipmanagement.com">
+               </div>
+            </div>
+            <div class="control-group">
+               <label class="control-label" for="inputPassword">Password</label>
+               <div class="controls">
+                  <input type="password" id="inputPassword" placeholder="Password">
+               </div>
+            </div>
+            <div class="control-group">
+               <div class="controls">
+                  <!-- <label class="checkbox">
+                     <input type="checkbox"><span class="metro-checkbox">Remember me</span>
+                  </label> -->
+                  <button type="submit" class="btn">Sign in</button>
+               </div>
+            </div>
+         </form>
+      </div>
+         
+      <!-- <div id="alerts-container">
+         <div id="toast-example1" class="toast toasttext02 fade in">
+            <form class="form-horizontal">
+               <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                     <input type="text" id="inputEmail" placeholder="Email">
+                  </div>
+               </div>
+               <div class="control-group">
+                  <label class="control-label" for="inputPassword">Password</label>
+                  <div class="controls">
+                     <input type="password" id="inputPassword" placeholder="Password">
+                  </div>
+               </div>
+               <div class="control-group">
+                  <div class="controls">
+                     <label class="checkbox">
+                        <input type="checkbox"><span class="metro-checkbox">Remember me</span>
+                     </label>
+                     <button type="submit" class="btn">Sign in</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div> -->
+
+      <!-- <div id="alerts-container">
+         <div id="toast-example1" class="toast toasttext02 fade in">
+            <button type="button" class="close" data-dismiss="alert"></button>
+            <div class="pull-left">
+               <div class="toast-object icon-info-4"></div>
+            </div>
+            <div class="toast-body">
+               <h4 class="toast-heading">Alpha version!</h4>
+               <p>Please be patience, this demo is still a work in progress! Thanks.</p>
+            </div>
+         </div>
+      </div> -->
+   
+      <!--<div id="metro-container" class="-container">-->
+         <!--<div class="row">-->
+            <div id="apps" class="metro">
+               <!-- <div class="metro panorama">
+                  <div class="panorama-sections">    -->
+                     <div class="panorama-section tile-span-4">
+   
+                        <!-- <h2>Featured apps</h2> -->
+   
+                        <a class="tile app wide bg-color-blue" href="vessel_tracker/index.html">
+                           <div class="image-wrapper">
+                              <span class="icon icon-location-5"></span>
+                           </div>
+                           <div class="app-label">VesselTracker</div>
+                           <div class="app-count">7</div>
+                        </a>
+
+                        <a class="tile app bg-color-greenDark" href="javascript:spend_tracker_app.load_app();">
+                           <div class="image-wrapper">
+                              <span class="icon icon-coin"></span>
+                           </div>
+                           <div class="app-label">Spend Tracker</div>
+                           <div class="app-count">9</div>
+                        </a>
+
+                        <a class="tile app bg-color-purple" href="#">
+                           <div class="image-wrapper">
+                              <span class="icon icon-truck"></span>
+                           </div>
+                           <div class="app-label">Logistics Tracker</div>
+                           <div class="app-count">3</div>
+                        </a>
+   
+                        <a class="tile app bg-color-blue" href="../uat/index.html">
+                           <div class="image-wrapper">
+                              <span class="icon icon-book-3"></span>
+                           </div>
+                           <div class="app-label">Vessel Wiki</div>
+                        </a>
+   
+
+                        <a class="tile app bg-color-blue" href="#">
+                           <div class="image-wrapper">
+                              <span class="icon icon-users"></span>
+                           </div>
+                           <div class="app-label">Crew List</div>
+                           <!-- <div class="app-count">12</div> -->
+                        </a>
+
+                        <a class="tile app bg-color-red" href="#">
+                           <div class="image-wrapper">
+                              <span class="icon icon-bell-2"></span>
+                           </div>
+                           <div class="app-label">My Alerts</div>
+                           <div class="app-count">19</div>
+                        </a>
+                         
+                        <a class="tile app bg-color-green" href="#">
+                           <div class="image-wrapper">
+                              <span class="icon icon-plus"></span>
+                           </div>
+                           <div class="app-label">More Apps</div>
+                        </a>
+                         
+   
+                     </div>
+   
+                  <!-- </div>
+               </div> -->
+               <!-- <a id="panorama-scroll-prev" href="#"></a>
+               <a id="panorama-scroll-next" href="#"></a>
+               <div id="panorama-scroll-prev-bkg"></div>
+               <div id="panorama-scroll-next-bkg"></div> -->
+            </div>
+         <!--</div>-->
+      <!--</div>-->
+   
+   </div>
+   <div id="charms" class="win-ui-dark slide">
+   
+      <div id="theme-charms-section" class="charms-section">
+         <div class="charms-header">
+            <a href="#" class="close-charms win-backbutton"></a>
+            <h2>Settings</h2>
+         </div>
+   
+         <div class="row-fluid">
+            <div class="span12">
+   
+               <form class="">
+                  <label for="win-theme-select">Change theme:</label>
+                  <select id="win-theme-select" class="">
+                     <option value="metro-ui-light">Light</option>
+                     <option value="metro-ui-dark">Dark</option>
+                  </select>
+               </form>
+   
+            </div>
+         </div>
+      </div>
+   
+   </div>
+
+   <div id="app-content">
+      <div id="spend-tracker" style="display:none">
+         <div data-role="page" id="page1">
+             <div data-theme="a" data-role="header">
+                 <!-- <a data-role="button" href="#" data-icon="refresh" data-iconpos="left"
+                 class="ui-btn-right">Refersh
+                 </a> -->
+                 <a data-role="button" href="javascript:current_step();" data-icon="refresh" data-iconpos="left" class="ui-btn-right"></a>
+                 <a id="btnBack" data-role="button" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left" href="javascript:step_back();"></a>
+                 <h3>
+                     SpendTracker
+                 </h3>
+                 <div data-role="navbar" data-iconpos="top" id="navbar">
+                     <ul>
+                         <li>
+                             <a href="#" data-transition="fade" data-theme="" data-icon="" class="my-navbarbtn" id="n_contracted">
+                                 Contracted
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" data-transition="fade" data-theme="" data-icon="" class="my-navbarbtn" id="n_approved">
+                                 Approved
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" data-transition="fade" data-theme="" data-icon="" class="my-navbarbtn" id="n_adhoc">
+                                 Adhoc
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div id="searchbox">
+               <input type="search" name="search" id="search-basic" value="" class='txtVendor' />
+               <!-- <input class='txtVendor' type='search' placeholder='Search for a vendor'/> -->
+             </div>
+             <div data-role="content">    
+                 <div id="index_content" style="display: block;">
+                 </div>
+                 <div id='view_title'></div>
+                 <div id='contracted' class="my-navbar-content"></div>
+                 <div id='approved' class="my-navbar-content"></div>
+                 <div id='adhoc' class="my-navbar-content"></div>
+                 <div id='vendor-invoices' class="my-navbar-content"></div>
+                 <div id='searched-vendor' class="my-navbar-content"></div>
+             </div>
+             <div class='spinner_index'>
+               <img src="img/spinner.gif" width="20px" height="20px" style="display:block;margin:auto;"/>
+             </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+   <!-- <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script> -->
+   <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+   <!-- <script>window.jQuery || document.write("<script src='assets/js/jquery-1.10.0.min.js'>\x3C/script>")</script> -->
+
+   <!--[if IE 7]>
+   <script type="text/javascript" src="scripts/bootmetro-icons-ie7.js">
+   <![endif]-->
+
+   <script type="text/javascript" src="assets/js/jstorage.js"></script>
+   <script type="text/javascript" src="assets/js/min/bootstrap.min.js"></script>
+   <script type="text/javascript" src="assets/js/bootmetro-panorama.js"></script>
+   <script type="text/javascript" src="assets/js/bootmetro-pivot.js"></script>
+   <script type="text/javascript" src="assets/js/bootmetro-charms.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.mobile-1.3.1.min.js"></script>
+   <script type="text/javascript" src="assets/js/jquery-ui-1.10.3.custom.js"></script> 
+   
+   <!-- <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script> -->
+
+   <script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+   <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+
+   <script type="text/javascript" src="assets/js/holder.js"></script>
+   <!--<script type="text/javascript" src="assets/js/perfect-scrollbar.with-mousewheel.min.js"></script>-->
+   <script type="text/javascript" src="assets/js/demo.js"></script>
+
+   <script type="text/javascript" src="assets/js/index.js"></script>
+   <script type="text/javascript" src="assets/js/spend_tracker.js"></script>
+
+   <script type="text/javascript">
+
+      $('.panorama').panorama({
+         //nicescroll: false,
+         showscrollbuttons: true,
+         keyboard: true,
+         parallax: true
+      });
+
+//      $(".panorama").perfectScrollbar();
+
+      $('#pivot').pivot();
+
+   </script>
+</body>
 </html>
