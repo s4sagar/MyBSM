@@ -1,0 +1,10 @@
+.my-count {
+	float: right;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+#view_title {
+	font-size: 18px;
+	text-align: center;
+}

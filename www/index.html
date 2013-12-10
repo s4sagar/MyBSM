@@ -27,8 +27,9 @@
    <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-icons.css">
    <link rel="stylesheet" type="text/css" href="assets/css/my_overload.css">
    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css" />
-   <!-- <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-1.3.1.min.css"> -->
-   <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-1.3.1.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/spend_tracker_overload.css">
+   <!-- <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css"> -->
    <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-ui-light.css">
    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.css"> -->
 
@@ -279,8 +280,27 @@
                  <!-- <a data-role="button" href="#" data-icon="refresh" data-iconpos="left"
                  class="ui-btn-right">Refersh
                  </a> -->
-                 <a data-role="button" href="javascript:current_step();" data-icon="refresh" data-iconpos="left" class="ui-btn-right"></a>
-                 <a id="btnBack" data-role="button" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left" href="javascript:step_back();"></a>
+                 <!-- <a data-role="button" href=";" data-icon="refresh" data-iconpos="left" class="ui-btn-right"></a> -->
+
+                 <a id="btnBack" class="tile app bg-color-red" href="javascript:step_back()">
+                     <div class="image-wrapper">
+                        <span class="icon icon-arrow-left"></span>
+                     </div>
+                 </a>
+
+                 <a id="btnHome" class="tile app bg-color-red" href="javascript:show_app_home()">
+                     <div class="image-wrapper">
+                        <span class="icon icon-home"></span>
+                     </div>
+                 </a>
+
+                 <!-- <a class="tile app bg-color-red" href="javascript:current_step()">
+                     <div class="image-wrapper">
+                        <span class="icon icon-refresh"></span>
+                     </div>
+                 </a> -->
+                 
+                  <!-- <a id="btnBack" data-role="button" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left" href="javascript:step_back();"></a> -->
                  <h3>
                      SpendTracker
                  </h3>
