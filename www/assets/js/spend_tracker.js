@@ -101,21 +101,21 @@ var spend_tracker_app = {
                     temp.amount = results[i]['INVOICE_AMOUNT_USD'];
                     vendor_array.push(temp);
                     if(results[i]['APPROVAL_STATUS'] == "CONTRACTED"){
-                        if(con_count >= 50) continue;
+                        if(con_count >= 20) continue;
                         results_div_con += "<li data-theme='c'><a href='javascript:spend_tracker_app.show_top_invoices_by_vendor_year("+results[i]['vendor_id']+", "+year+")' id='"+results[i]['vendor_id']+"'> <span class='list_text'>"+toTitleCase(results[i]['NAME'])+"</span>";
                         // results_div += "<span class='chevron my-chevron'></span>";
                         results_div_con += "<span class='my-count'>USD "+parseFloat(results[i]['INVOICE_AMOUNT_USD']).formatMoney(2, '.', ',')+"</a></span></li>";
                         con_count++;
                     }
                     else if(results[i]['APPROVAL_STATUS'] == "APPROVED"){
-                        if(app_count >= 50) continue;
+                        if(app_count >= 20) continue;
                         results_div_app += "<li data-theme='c'><a href='javascript:spend_tracker_app.show_top_invoices_by_vendor_year("+results[i]['vendor_id']+", "+year+")' id='"+results[i]['vendor_id']+"'> <span class='list_text'>"+toTitleCase(results[i]['NAME'])+"</span>";
                         // results_div += "<span class='chevron my-chevron'></span>";
                         results_div_app += "<span class='my-count'>USD "+parseFloat(results[i]['INVOICE_AMOUNT_USD']).formatMoney(2, '.', ',')+"</a></span></li>";
                         app_count++;
                     }
                     else {
-                        if(else_count >= 50) continue;
+                        if(else_count >= 20) continue;
                         results_div += "<li data-theme='c'><a href='javascript:spend_tracker_app.show_top_invoices_by_vendor_year("+results[i]['vendor_id']+", "+year+")' id='"+results[i]['vendor_id']+"'> <span class='list_text'>"+toTitleCase(results[i]['NAME'])+"</span>";
                         // results_div += "<span class='chevron my-chevron'></span>";
                         results_div += "<span class='my-count'>USD "+parseFloat(results[i]['INVOICE_AMOUNT_USD']).formatMoney(2, '.', ',')+"</a></span></li>";
